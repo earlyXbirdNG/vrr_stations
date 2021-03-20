@@ -38,7 +38,7 @@ $num = mysqli_num_rows($result);
        <!-- <img src="img/banner_grillparty.jpg" alt="Banner: Grillparty"> -->
         <h1>Station aktualisieren</h1>
         <p>
-            Waehle die Station die du aktualisieren moechtest.
+            Waehle die Station die du aktualisieren möchtest.
         </p>
       <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
       <form action="update.php" method="post">

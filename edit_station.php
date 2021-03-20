@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // Datenbankverbindung öffnen
 require 'secret_webinterface.php';

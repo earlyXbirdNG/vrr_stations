@@ -44,7 +44,16 @@ $num = mysqli_num_rows($result);
         <a href="edit_station.php" class="button_small">Neue Meldung</a>
         <a href="offen.php" class="button_small">Nur offene zeigen</a>
         <a href="index.php" class="button_small">Alle zeigen</a>
-        <br><br>
+
+        <!-- Suche -->
+        <form action="search.php" method="post">
+            
+                <label for="query"></label><br>
+                <input type="text" id="query" name="query" placeholder="Station finden..." required>
+                
+                <input type="submit" id="submit" name="submit" value="Finden">
+        </form>
+        <br>
 
       <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
         <table>

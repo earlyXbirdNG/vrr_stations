@@ -38,6 +38,11 @@ $num = mysqli_num_rows($result);
     <a href="admin_login.php" class="button_home">Administrieren</a>
     <main>
         <h1>Stationsuebersicht</h1>
+
+        <?php
+        echo "<h3>(Erfasst: " . htmlentities($num) . " Stationen)</h3>";
+        ?>
+
         <p>
             Folgend siehst du eine Auflistung aller Stationen im VRR und deren Erhebungsstatus.
         </p>

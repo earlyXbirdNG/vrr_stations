@@ -37,7 +37,7 @@ $num = mysqli_num_rows($result);
     <a href="index.php" class="button_home">Startseite</a>
     <a href="admin_login.php" class="button_home">Administrieren</a>
     <main>
-        <h1>Stationsuebersicht</h1>
+        <h1>Stationsübersicht</h1>
 
         <?php
         echo "<h3>(Erfasst: " . htmlentities($num) . " Stationen)</h3>";

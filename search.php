@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
     $query = mysqli_real_escape_string($dbconnect, $_POST["query"]);
 
     // SQL-Abfrage definieren
-    $sql = "SELECT * FROM stations WHERE station LIKE '%" . $query . "%'";
+    $sql = "SELECT station, status, DATE_FORMAT(datum, "%e.%m.%y") AS datum, nutzer FROM stations WHERE station LIKE '%" . $query . "%'";
 
     // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);

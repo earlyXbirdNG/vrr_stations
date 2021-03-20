@@ -35,7 +35,7 @@ $num = mysqli_num_rows($result);
 <div class="wrapper">
 
 <?php
- echo htmlentities($_SERVER["X-USER"]);
+ echo htmlentities($_SERVER["HTTP_X-USER"]);
 ?>
 
 <img src="img/RRX.jpg" alt="Banner: RRX">

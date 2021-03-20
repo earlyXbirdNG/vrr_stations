@@ -50,7 +50,7 @@ $num = mysqli_num_rows($result);
                 if($num > 0){
 
                     while ($dataset = mysqli_fetch_assoc($result)) {
-                        echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . " " . htmlentities($dataset["status"]) . "</option>";
+                        echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . " (" . htmlentities($dataset["status"]) . ")" . "</option>";
                     }                
                 }
             ?>

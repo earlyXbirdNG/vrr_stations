@@ -45,34 +45,17 @@ $num = mysqli_num_rows($result);
       <form action="update.php" method="post">
             
             <label for='id'>Station:</label><br>
-
-            
-            <input list ="stationswahlquelle"  autocomplete="off" required id="stationswahl" name="stationswahl">
-
-            <datalist id="stationswahlquelle">
+            <select id="id" name="id" placeholder="Station" required>
             <?php
                 if($num > 0){
 
                     while ($dataset = mysqli_fetch_assoc($result)) {
                         echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . "</option>";
-                       // echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . " (" . htmlentities($dataset["status"]) . ")" . "</option>";
+                      //  echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . " (" . htmlentities($dataset["status"]) . ")" . "</option>";
                     }                
                 }
             ?>
-            </datalist>
-            
-            
-            
-
-
-
-
-
-
-
-
-
-
+            </select>                    
                 <br><br>
 
                 <label for="status">Status:</label><br>

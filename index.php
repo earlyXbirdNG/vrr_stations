@@ -35,7 +35,8 @@ $num = mysqli_num_rows($result);
 <div class="wrapper">
 
 <a href="index.php" class="button_home">Startseite</a>
-<br><br><br><br>
+<br><br>
+<br><br>
 
 <img src="img/sbahn.png" alt="Banner: RRX">
 

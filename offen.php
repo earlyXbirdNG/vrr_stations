@@ -69,7 +69,6 @@ $num = mysqli_num_rows($result);
                 <th>Status</th>
                 <th>Datum</th>
                 <th>Nutzer</th>
-                <th>Interne ID</th>
             </tr>
             </thead>
             <tbody>
@@ -86,7 +85,6 @@ $num = mysqli_num_rows($result);
                     echo "<td>" . htmlentities($dataset["status"]) . "</td>\n";
                     echo "<td>" . htmlentities($dataset["datum"]) . "</td>\n";
                     echo "<td>" . htmlentities($dataset["nutzer"]) . "</td>\n";
-                    echo "<td>" . htmlentities($dataset["id"]) . "</td>\n";
                     echo "</tr>\n";
                 }                
             }

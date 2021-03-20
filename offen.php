@@ -9,7 +9,7 @@ if (!$dbconnect) {
 }
 
 // SQL-Abfrage definieren
-$sql = "SELECT * FROM stations WHERE status='Offen'";
+$sql = 'SELECT station, status, DATE_FORMAT(datum, "%e.%m.%y") AS datum, nutzer FROM stations WHERE status="Offen"';
 
 // SQL-Abfrage durchfuehren
 $result = mysqli_query($dbconnect, $sql);

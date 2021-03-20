@@ -65,10 +65,6 @@ $num = mysqli_num_rows($result);
                     </select>
                 <br><br>
 
-                <label for="nutzer">Deine Initalien:</label><br>
-                <input type="text" id="nutzer" name="nutzer" placeholder="z.B. VRR" required>
-                <br><br>
-
                 <input type="submit" id="submit" name="submit" value="Senden" class="button">
         </form>
     </main>

@@ -39,7 +39,7 @@ $num = mysqli_num_rows($result);
        <!-- <img src="img/banner_grillparty.jpg" alt="Banner: Grillparty"> -->
         <h1>Station aktualisieren</h1>
         <p>
-            Waehle die Station die du aktualisieren möchtest.
+            Wähle die Station die du aktualisieren möchtest.
         </p>
       <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
       <form action="update.php" method="post">
@@ -63,6 +63,10 @@ $num = mysqli_num_rows($result);
                     <option value="Reserviert">Reserviert</option>
                     <option value="Offen">Offen</option>
                     </select>
+                <br><br>
+
+                <label for="nutzer">Nutzer:</label><br>
+                <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
                 <br><br>
 
                 <input type="submit" id="submit" name="submit" value="Senden" class="button">

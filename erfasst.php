@@ -1,19 +1,20 @@
-<?php
+﻿<?php
 
+// Datenbankverbindung öffnen
 require 'secret_webinterface.php';
 
 // Fehler abfangen
 if (!$dbconnect) {
-    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzützung.");
+    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzuetzung.");
 }
 
 // SQL-Abfrage definieren
-$sql = "SELECT * FROM stationen WHERE status='Erhoben'";
+$sql = "SELECT * FROM stations WHERE status='Erhoben'";
 
-// SQL-Abfrage durchführen
+// SQL-Abfrage durchfuehren
 $result = mysqli_query($dbconnect, $sql);
 
-// Anzahl der Datensätze ermitteln
+// Anzahl der Datenstze ermitteln
 $num = mysqli_num_rows($result);
 
 
@@ -35,7 +36,7 @@ $num = mysqli_num_rows($result);
     <a href="index.php" class="button_home">Startseite</a>
     <a href="admin_login.php" class="button_home">Administrieren</a>
     <main>
-        <h1>Stationsübersicht</h1>
+        <h1>Stationsuebersicht</h1>
         <p>
             Folgend siehst du eine Auflistung aller Stationen im VRR und deren Erhebungsstatus.
         </p>
@@ -45,7 +46,7 @@ $num = mysqli_num_rows($result);
         <a href="index.php" class="button_small">Alle zeigen</a>
         <br><br>
 
-      <!--  <p><strong>Platzhater für einen fetten Text</strong></p> -->
+      <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
         <table>
             <thead>
             <tr>
@@ -57,7 +58,7 @@ $num = mysqli_num_rows($result);
             </tr>
             </thead>
             <tbody>
-            <!-- Ausgabe der Datensätze */  -->
+            <!-- Ausgabe der Datenstze */  -->
 
             <?php
 

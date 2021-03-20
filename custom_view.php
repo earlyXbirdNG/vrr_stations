@@ -1,20 +1,20 @@
-<?php
+﻿<?php
 
 // Datenbankverbindung öffnen
 require 'secret_webinterface.php';
 
 // Fehler abfangen
 if (!$dbconnect) {
-    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzützung.");
+    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzuetzung.");
 }
 
 // SQL-Abfrage definieren
-$sql = "SELECT * FROM stationen";
+$sql = "SELECT * FROM stations";
 
-// SQL-Abfrage durchführen
+// SQL-Abfrage durchfuehren
 $result = mysqli_query($dbconnect, $sql);
 
-// Anzahl der Datensätze ermitteln
+// Anzahl der Datensaetze ermitteln
 $num = mysqli_num_rows($result);
 
 
@@ -38,9 +38,9 @@ $num = mysqli_num_rows($result);
        <!-- <img src="img/banner_grillparty.jpg" alt="Banner: Grillparty"> -->
         <h1>Station aktualisieren</h1>
         <p>
-            Wähle die Station die du aktualisieren möchtest.
+            Waehle die Station die du aktualisieren moechtest.
         </p>
-      <!--  <p><strong>Platzhater für einen fetten Text</strong></p> -->
+      <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
       <form action="update.php" method="post">
             
             <label for='id'>Station:</label><br>

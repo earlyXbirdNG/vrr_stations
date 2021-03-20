@@ -5,22 +5,22 @@ require 'secret_webinterface.php';
 
 // Fehler abfangen
 if (!$dbconnect) {
-    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzützung.");
+    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzuetzung.");
 }
 
 
 if (isset($_POST["submit"])) {
-    // mysqli_real_escape_string() sorgt dafür, dass eingegebener Text nicht als SQL-Befehl
-    // verstanden werden kann (z.B. Anführungszeichen könnten sonst für Probleme sorgen)
+    // mysqli_real_escape_string() sorgt dafuer, dass eingegebener Text nicht als SQL-Befehl
+    // verstanden werden kann (z.B. Anfuehrungszeichen koennten sonst fuer Probleme sorgen)
     $query = mysqli_real_escape_string($dbconnect, $_POST["query"]);
 
     // SQL-Abfrage definieren
-    $sql = "SELECT * FROM stationen WHERE station LIKE '%" . $query . "%'";
+    $sql = "SELECT * FROM stations WHERE station LIKE '%" . $query . "%'";
 
-    // Abfrage durchführen
+    // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);
 
-    // Anzahl der Datensätze ermitteln
+    // Anzahl der Datensaetze ermitteln
     $num = mysqli_num_rows($result);
 
 }
@@ -46,26 +46,26 @@ if (isset($_POST["submit"])) {
             <b>
                 <?php
 
-                // Prüfen, ob direkt oder durch Formular abgerufen
+                // Pruefen, ob direkt oder durch Formular abgerufen
                 if (!isset($_POST["submit"])) {
                     echo "Unbekannter Fehler (120).<br>" .
-                        "Gehe zurück und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
+                        "Gehe zurueck und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
                         "wende dich bitte an den Support.<br>";
                 }
                 // Durch Formular, aber keine Daten angegeben
                 elseif (!isset($_POST["submit"])) {
                     echo "Leeres Formular (121).<br>" .
-                    "Gehe zurück und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
+                    "Gehe zurueck und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
                     "wende dich bitte an den Support.<br>";
                 }
-                // Prüfen ob  Erfolg
+                // Pruefen ob  Erfolg
                 elseif (isset($result) && $result) {
                     echo "Suche nach " . $query . "</b> :.";
                 }
                 // SQL-Fehler
                 else {
                     echo "Huch, ein Fehler. Das sollte nicht passieren. Fehlercode: <code>" . mysqli_error($dbconnect) . "</code><br>" .
-                        "Gehe zurück und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
+                        "Gehe zurueck und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
                         "wende dich bitte an den Support.<br>";
                 }
 
@@ -87,7 +87,7 @@ if (isset($_POST["submit"])) {
             </tr>
             </thead>
             <tbody>
-            <!-- Ausgabe der Datensätze */  -->
+            <!-- Ausgabe der Datensaetze */  -->
 
             <?php
 

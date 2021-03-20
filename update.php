@@ -38,7 +38,7 @@ if (isset($_POST["submit"])) {
 <div class="wrapper">
 <img src="img/RRX.jpg" alt="Banner: RRX">
 <a href="index.php" class="button_home">Startseite</a>
-<a href="admin_login.php" class="button_home">Administrieren</a>
+<!--  <a href="admin_login.php" class="button_home">Administrieren</a>  -->
     <main>
     
         <h1>Ergebnis Deiner Anfrage</h1>

@@ -41,7 +41,7 @@ $num = mysqli_num_rows($result);
         <h1>Stationsübersicht</h1>
         
         <?php
-        echo "<h3>" . htmlentities($num) . "</h3>\n";
+        echo "<h3>(Gesamt: " . htmlentities($num) . " Stationen)</h3>";
         ?>
         
         

@@ -33,9 +33,10 @@ $num = mysqli_num_rows($result);
 </head>
 <body>
 <div class="wrapper">
-
-<img src="img/sbahn.png" alt="Banner: RRX">
+    
 <a href="index.php" class="button_home">Startseite</a>
+<img src="img/sbahn.png" alt="Banner: RRX">
+
 <!-- <a href="admin_login.php" class="button_home">Administrieren</a> -->
     <main>
         

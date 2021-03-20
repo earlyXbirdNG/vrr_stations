@@ -14,7 +14,7 @@ if (isset($_POST["submit"])) {
     // verstanden werden kann (z.B. Anführungszeichen koennten sonst für Probleme sorgen)
     $id = mysqli_real_escape_string($dbconnect, $_POST["id"]);
     $status = mysqli_real_escape_string($dbconnect, $_POST["status"]);
-    $nutzer = mysqli_real_escape_string(htmlentities($_SERVER["HTTP_X_USER"]));
+    $nutzer = mysqli_real_escape_string($dbconnect, htmlentities($_SERVER["HTTP_X_USER"]));
 
 
     // SQL-Abfrage definieren

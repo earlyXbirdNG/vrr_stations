@@ -59,6 +59,7 @@ $num = mysqli_num_rows($result);
                 <label for="status">Status:</label><br>
                 <select id="status" name="status" placeholder="Neuer Status" required>
                     <option value="Erhoben">Erhoben</option>
+                    <option value="Reserviert">Reserviert</option>
                     <option value="Offen">Offen</option>
                     </select>
                 <br><br>

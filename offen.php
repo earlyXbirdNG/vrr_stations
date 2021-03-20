@@ -5,7 +5,7 @@ require 'secret_webinterface.php';
 
 // Fehler abfangen
 if (!$dbconnect) {
-    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzuetzung.");
+    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzützung.");
 }
 
 // SQL-Abfrage definieren
@@ -36,7 +36,7 @@ $num = mysqli_num_rows($result);
     <a href="admin_login.php" class="button_home">Administrieren</a>
     <main>
     
-        <h1>Stationsuebersicht</h1>
+        <h1>Stationsübersicht</h1>
         <p>
             Folgend siehst du eine Auflistung aller Stationen im VRR und deren Erhebungsstatus.
         </p>

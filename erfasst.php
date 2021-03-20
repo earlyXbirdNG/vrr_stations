@@ -5,7 +5,7 @@ require 'secret_webinterface.php';
 
 // Fehler abfangen
 if (!$dbconnect) {
-    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzuetzung.");
+    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzützung.");
 }
 
 // SQL-Abfrage definieren

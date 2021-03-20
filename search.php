@@ -5,7 +5,7 @@ require 'secret_webinterface.php';
 
 // Fehler abfangen
 if (!$dbconnect) {
-    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzuetzung.");
+    die("Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte wende dich an einen Administrator zur weiteren Unterstzützung.");
 }
 
 
@@ -49,13 +49,13 @@ if (isset($_POST["submit"])) {
                 // Pruefen, ob direkt oder durch Formular abgerufen
                 if (!isset($_POST["submit"])) {
                     echo "Unbekannter Fehler (120).<br>" .
-                        "Gehe zurueck und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
+                        "Gehe zurück und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
                         "wende dich bitte an den Support.<br>";
                 }
                 // Durch Formular, aber keine Daten angegeben
                 elseif (!isset($_POST["submit"])) {
                     echo "Leeres Formular (121).<br>" .
-                    "Gehe zurueck und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
+                    "Gehe zurück und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
                     "wende dich bitte an den Support.<br>";
                 }
                 // Pruefen ob  Erfolg
@@ -65,7 +65,7 @@ if (isset($_POST["submit"])) {
                 // SQL-Fehler
                 else {
                     echo "Huch, ein Fehler. Das sollte nicht passieren. Fehlercode: <code>" . mysqli_error($dbconnect) . "</code><br>" .
-                        "Gehe zurueck und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
+                        "Gehe zurück und versuche es erneut Wenn der Fehler wiederholt auftritt,<br>" .
                         "wende dich bitte an den Support.<br>";
                 }
 

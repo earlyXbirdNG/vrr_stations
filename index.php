@@ -10,7 +10,7 @@ if (!$dbconnect) {
 }
 
 // SQL-Abfrage definieren
-$sql = "SELECT * FROM stations";
+$sql = 'SELECT station, status, DATE_FORMAT(datum, "%e.%m.%y") AS datum, nutzer FROM stations';
 
 // SQL-Abfrage durchfuehren
 $result = mysqli_query($dbconnect, $sql);

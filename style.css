@@ -98,3 +98,7 @@ th {
     background-color: red;
     border-color: red;
 }
+
+.table_station {
+    text-align: right;
+}

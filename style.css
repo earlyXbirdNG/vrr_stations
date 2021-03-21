@@ -49,11 +49,11 @@ thead tr {
 }
 
 tbody tr:nth-child(even) {
-    background: #e3e5e4;
+    background: #95e59a;
 }
 
 tbody tr:nth-child(odd) {
-    background: #84d74b;
+    background: #5cce64;
 }
 
 th, td {

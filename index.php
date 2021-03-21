@@ -89,7 +89,7 @@ $num = mysqli_num_rows($result);
 
                 while ($dataset = mysqli_fetch_assoc($result)) {
                     echo "<tr>\n";
-                    echo "<td>" . htmlentities($dataset["station"]) . "</td>\n";
+                    echo "<td class=table_station>" . htmlentities($dataset["station"]) . "</td>\n";
                     echo "<td>" . htmlentities($dataset["status"]) . "</td>\n";
                     echo "<td>" . htmlentities($dataset["datum"]) . "</td>\n";
                     echo "<td>" . htmlentities($dataset["nutzer"]) . "</td>\n";

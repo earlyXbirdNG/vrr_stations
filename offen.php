@@ -50,7 +50,7 @@ $num_reserved = mysqli_num_rows($result_count_reserved);
 
         <?php
         echo "<h3>(Offen: " . htmlentities($num) . " Stationen)</h3>";
-        echo "<p>(Davon Reserviert: " . htmlentities($num_reserved) . " Stationen)</p>";
+        echo "<h4>(Davon Reserviert: " . htmlentities($num_reserved) . " Stationen)</h4>";
         ?>
 
         <p>

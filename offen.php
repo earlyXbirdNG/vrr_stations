@@ -49,7 +49,7 @@ $num_reserved = mysqli_num_rows($result_count_reserved);
         <h1>Stationsübersicht</h1>
 
         <?php
-        echo "<h3>(Offen: " . htmlentities($num) . " Stationen, beinhaltet )" . htmlentities($num_reserved) . "reservierte Stationen </h3>";
+        echo "<h3>(Offen: " . htmlentities($num) . " Stationen, beinhaltet " . htmlentities($num_reserved) . " reservierte Stationen </h3>";
         ?>
 
         <p>

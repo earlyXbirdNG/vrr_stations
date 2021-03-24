@@ -10,12 +10,15 @@ if (!$dbconnect) {
 
 // SQL-Abfrage definieren
 $sql = 'SELECT station, status, DATE_FORMAT(datum, "%e.%m.%y") AS datum, nutzer FROM stations WHERE status="Offen" OR status="Reserviert" ORDER BY station';
+$sql_count_reserved = 'SELECT station FROM stations WHERE status="Reserviert"';
 
 // SQL-Abfrage durchfuehren
 $result = mysqli_query($dbconnect, $sql);
+$result_count_reserved = mysqli_query($dbconnect, $sql_count_reserved);
 
 // Anzahl der Datensaetze ermitteln
 $num = mysqli_num_rows($result);
+$num_reserved = mysqli_num_rows($result_count_reserved);
 
 
 ?>
@@ -47,6 +50,7 @@ $num = mysqli_num_rows($result);
 
         <?php
         echo "<h3>(Offen: " . htmlentities($num) . " Stationen)</h3>";
+        echo "<h3>(Davon Reserviert: " . htmlentities($num_reserved) . " Stationen)</h3>";
         ?>
 
         <p>

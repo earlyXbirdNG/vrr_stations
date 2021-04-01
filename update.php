@@ -19,6 +19,7 @@ if (isset($_POST["submit"])) {
 
     // SQL-Abfrage definieren
     $sql = "UPDATE stations SET status='" . $status . "',nutzer='" . $nutzer . "',datum=default WHERE id='" . $id . "'";
+    
 
     // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);

@@ -1,7 +1,7 @@
 <?php
 
 // Datenbankverbindung öffnen
-require '../secret_webinterface.php';
+require 'secret_webinterface_admin.php';
 
 // Fehler abfangen
 if (!$dbconnect) {

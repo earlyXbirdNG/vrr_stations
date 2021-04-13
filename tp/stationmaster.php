@@ -98,15 +98,8 @@ $num = mysqli_num_rows($result);
             <h2><strong>Gefahrenbereich:</strong></h2>
             <h3>Stationen zurücksetzen</h3>
             Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.<br>
-            Um fortzufahren tippe das Wort "RESET" ein und bestätige die Checkbox.<br>
-
             <br> 
             <form action="reset_stations.php" method="post">
-
-            <div>
-                    <label for="answer">Zurücksetzen?</label><br> 
-                    <input type="text" name="answer" id="answer" placeholder="Tippe RESET ein..." maxlength="128"/>
-            </div>
             
             <div>
                     <input type="checkbox" id="agreement" name="agreement" required>

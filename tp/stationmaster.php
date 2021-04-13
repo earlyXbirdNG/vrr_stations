@@ -82,7 +82,7 @@ $num = mysqli_num_rows($result);
 
             <div>
                     <label for="name">Name:</label><br> 
-                    <input type="text" placeholder="Stationsname" maxlength="128"/>
+                    <input type="text" name="name" id="nutzer" placeholder="Stationsname" maxlength="128"/>
             </div>
             <br> 
        

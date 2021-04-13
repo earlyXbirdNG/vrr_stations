@@ -67,7 +67,7 @@ if (isset($_POST["submit"])) {
                 }
                 // Pruefen ob  Erfolg
                 elseif (isset($result) && $result) {
-                    echo "Dein Eintrag <b>" . $status . "</b> wurde vermerkt.";
+                    echo "Dein Eintrag <b>" . $name . "</b> wurde vermerkt.";
                 }
                 // SQL-Fehler
                 else {

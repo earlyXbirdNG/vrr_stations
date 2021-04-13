@@ -12,16 +12,23 @@ if (!$dbconnect) {
 if (isset($_POST["submit"])) {
     // mysqli_real_escape_string() sorgt dafür, dass eingegebener Text nicht als SQL-Befehl
     // verstanden werden kann (z.B. Anführungszeichen koennten sonst für Probleme sorgen)
-    $id = mysqli_real_escape_string($dbconnect, $_POST["id"]);
-    $status = mysqli_real_escape_string($dbconnect, $_POST["status"]);
-    $nutzer = mysqli_real_escape_string($dbconnect, htmlentities($_SERVER["HTTP_X_USER"]));
+   // $id = mysqli_real_escape_string($dbconnect, $_POST["id"]);
+   // $answer = mysqli_real_escape_string($dbconnect, $_POST["answer"]);
+   // $nutzer = mysqli_real_escape_string($dbconnect, htmlentities($_SERVER["HTTP_X_USER"]));
 
+    if ($answer == "RESET"){
 
-    // SQL-Abfrage definieren
-    $sql = "UPDATE stations SET status='" . $status . "',nutzer='" . $nutzer . "',datum=default WHERE id='" . $id . "'";
+        // SQL-Abfrage definieren
+        $sql = "UPDATE `stations` SET status = "Offen" WHERE id IS NOT NULL";
 
-    // Abfrage durchfuehren
-    $result = mysqli_query($dbconnect, $sql);
+        // Abfrage durchfuehren
+        $result = mysqli_query($dbconnect, $sql);
+
+    }
+    elseif ($answer != "RESET"){
+        $error = "Es wurde nix geändert, da Du nicht RESET eingetippt hast."
+    }
+
 
 }
 
@@ -68,6 +75,9 @@ if (isset($_POST["submit"])) {
                 // Pruefen ob  Erfolg
                 elseif (isset($result) && $result) {
                     echo "Dein Eintrag <b>" . $status . "</b> wurde vermerkt.";
+                }
+                elseif (isset($error) && $error) {
+                    echo "$error";
                 }
                 // SQL-Fehler
                 else {

@@ -47,7 +47,7 @@ $num = mysqli_num_rows($result);
         <h1>Admin-Center</h1>
         
         <p>
-            <h2>Station löschen</h2>
+            <h3>Station löschen</h3>
 
 
             <form action="delete_station.php" method="post">
@@ -76,7 +76,7 @@ $num = mysqli_num_rows($result);
         </p>
         <br><br>
         <p>
-            <h2>Station hinzufügen</h2>
+            <h3>Station hinzufügen</h3>
 
 
             <form action="add_station.php" method="post">
@@ -92,6 +92,34 @@ $num = mysqli_num_rows($result);
 
 
         </p>
+
+
+        <p>
+            <h2><strong>Gefahrenbereich:</strong></h2>
+            <h3>Stationen zurücksetzen</h3>
+            Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.<br>
+            Um fortzufahren tippe das Wort "RESET" ein und bestätige die Checkbox.<br>
+
+            <br> 
+            <form action="reset_stations.php" method="post">
+
+            <div>
+                    <label for="answer">Zurücksetzen?</label><br> 
+                    <input type="text" name="answer" id="answer" placeholder="Tippe RESET ein..." maxlength="128"/>
+            </div>
+            
+            <div>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Ich weiß was ich tue.</label>
+            </div>
+
+            <input type="submit" id="submit" name="submit" value="Zurücksetzen" class="button">
+
+        </form>
+
+
+        </p>
+
       <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
       <br><br><br>
       <a href="../index.php" class="button">Stationsübersicht</a>

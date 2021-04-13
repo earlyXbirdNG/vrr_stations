@@ -31,7 +31,7 @@ if (isset($_POST["submit"])) {
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
     <title>Stations - internetz.app</title>
 </head>
 <body>

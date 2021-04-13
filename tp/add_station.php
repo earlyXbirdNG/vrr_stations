@@ -82,7 +82,7 @@ if (isset($_POST["submit"])) {
         </p>
 
         <a href="../index.php" class="button">Stationsübersicht</a>
-        <a href="stationmaster" class="button button-green">Zurück</a>
+        <a href="stationmaster.php" class="button button-green">Zurück</a>
     </main>
 </div>
 </body>

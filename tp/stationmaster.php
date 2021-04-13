@@ -63,7 +63,7 @@ $num = mysqli_num_rows($result);
                 }
             ?>
             </select>                    
-
+                <br>
                 <label for="nutzer">Nutzer:</label><br>
                 <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
                 <br><br>
@@ -92,6 +92,7 @@ $num = mysqli_num_rows($result);
 
         </p>
       <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
+      <br><br><br>
       <a href="../index.php" class="button">Stationsübersicht</a>
 
     </main>

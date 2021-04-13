@@ -18,7 +18,7 @@ if (isset($_POST["submit"])) {
 
 
     // SQL-Abfrage definieren
-    $sql = "INSERT INTO stations ('name','status','datum','nutzer') VALUES('" . $name . "','Offen',default,'" . $nutzer . "')";
+    $sql = "INSERT INTO stations ('name', 'status', 'datum', 'nutzer') VALUES('" . $name . "','Offen',default,'" . $nutzer . "')";
 
     // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);

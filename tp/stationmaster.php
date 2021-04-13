@@ -81,7 +81,7 @@ $num = mysqli_num_rows($result);
             <form action="add_station.php" method="post">
 
             <div>
-                    <label>name</label><br> 
+                    <label for="name">Name:</label><br> 
                     <input type="text" placeholder="Stationsname" maxlength="128"/>
             </div>
             <br> 

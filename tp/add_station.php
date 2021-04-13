@@ -31,17 +31,17 @@ if (isset($_POST["submit"])) {
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
     <title>Stations - internetz.app</title>
 </head>
 <body>
 <div class="wrapper">
     
-<a href="index.php" class="button_home">Startseite</a>
+<a href="../index.php" class="button_home">Startseite</a>
 <br><br>
 <br><br>
 
-<img src="img/sbahn.png" alt="Banner: RRX">
+<img src="../img/sbahn.png" alt="Banner: RRX">
 
 
 <!--  <a href="admin_login.php" class="button_home">Administrieren</a>  -->
@@ -80,8 +80,8 @@ if (isset($_POST["submit"])) {
             </b>
         </p>
 
-        <a href="index.php" class="button">Stationsübersicht</a>
-        <a href="edit_station.php" class="button button-green">Neue Meldung</a>
+        <a href="../index.php" class="button">Stationsübersicht</a>
+        <a href="../edit_station.php" class="button button-green">Neue Meldung</a>
     </main>
 </div>
 </body>

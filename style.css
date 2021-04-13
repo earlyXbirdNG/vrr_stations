@@ -18,6 +18,28 @@ p {
     font-size: 1.0em;
 }
 
+
+.warnhead2 {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+
+.warnhead3 {
+    color: red;
+    font-size: 1.17em;
+    font-weight: bolder;
+}
+
+.warntext {
+    color: red;
+    line-height: 1.2em;
+    font-size: 1.0em;
+}
+
+
+
 .wrapper {
     width: 90%;
     margin: 0 auto;

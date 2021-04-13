@@ -23,11 +23,9 @@ if (isset($_POST["submit"]) && $answer == "RESET") {
     $result = mysqli_query($dbconnect, $sql);
     }
 
-    elseif ($answer != "RESET"){
+    else {
         $error = "Es wurde nix geändert, da Du nicht RESET eingetippt hast."
     }
-
-
 ?>
 
 <!DOCTYPE html>

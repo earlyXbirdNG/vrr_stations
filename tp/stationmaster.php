@@ -74,7 +74,9 @@ $num = mysqli_num_rows($result);
 
 
         </p>
-        <br><br>
+        <br>
+        <hr>
+        <br>
         <p>
             <h3>Station hinzufügen</h3>
 
@@ -85,38 +87,30 @@ $num = mysqli_num_rows($result);
                     <label for="name">Name:</label><br> 
                     <input type="text" name="name" id="name" placeholder="Stationsname" maxlength="128"/>
             </div>
-            <br> 
-       
+            <br>       
             <input type="submit" id="submit" name="submit" value="Senden" class="button">
         </form>
-
-
         </p>
-
-
+        <br>
+        <hr>
+        <br>
         <p>
             <h2><strong>Gefahrenbereich:</strong></h2>
             <h3>Stationen zurücksetzen</h3>
-            Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.<br>
+            <p>Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.</p><br>
             <br> 
             <form action="reset_stations.php" method="post">
-            
-            <div>
-                    <input type="checkbox" id="agreement" name="agreement" required>
-                    <label for="agreement">Ich weiß was ich tue.</label>
-            </div>
-
-            <input type="submit" id="submit" name="submit" value="Zurücksetzen" class="button">
-
-        </form>
-
-
+                <div>   
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Ich weiß was ich tue.</label>
+                </div>
+                <input type="submit" id="submit" name="submit" value="Zurücksetzen" class="button">
+            </form>
         </p>
-
-      <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
-      <br><br><br>
-      <a href="../index.php" class="button">Stationsübersicht</a>
-
+        <br>
+        <hr>
+        <br>
+        <a href="../index.php" class="button">Stationsübersicht</a>
     </main>
 </div>
 </body>

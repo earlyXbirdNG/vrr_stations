@@ -19,7 +19,7 @@ if (isset($_POST["submit"])) {
     if ($answer == "RESET"){
 
         // SQL-Abfrage definieren
-        $sql = "UPDATE `stations` SET status = "Offen" WHERE id IS NOT NULL";
+        $sql = "UPDATE `stations` SET status = 'Offen' WHERE id IS NOT NULL";
 
         // Abfrage durchfuehren
         $result = mysqli_query($dbconnect, $sql);

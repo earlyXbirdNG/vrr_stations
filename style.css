@@ -97,15 +97,19 @@ th {
     text-decoration: unset;
 }
 
+.button_red {
+    background-color: red;
+    border-radius: 3px;
+    border: 4px solid red;
+    color: white;
+    text-decoration: unset;
+}
+
 .button-green {
     background-color: limegreen;
     border-color: limegreen;
 }
 
-.button-red {
-    background-color: red;
-    border-color: red;
-}
 
 .table_station {
     text-align: center;

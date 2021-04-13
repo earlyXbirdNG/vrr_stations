@@ -91,8 +91,8 @@ $num = mysqli_num_rows($result);
         <hr>
         <br>
         <p>
-            <warnhead2><strong>Gefahrenbereich:</strong></warnheadh2>
-            <warnhead3>Stationen zurücksetzen</warnhead3>
+            <warnhead2><strong>Gefahrenbereich:</strong></warnheadh2><br>
+            <warnhead3>Stationen zurücksetzen</warnhead3><br>
             <warntext>Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.</warntext><br>
             <form action="reset_stations.php" method="post">
                 <div>   

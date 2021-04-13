@@ -36,12 +36,12 @@ if (isset($_POST["submit"])) {
 </head>
 <body>
 <div class="wrapper">
-    
-<a href="index.php" class="button_home">Startseite</a>
+<a href="../index.php" class="button_home">Startseite</a>
+<a href="stationmaster.php" class="button_admin">Admin</a>
 <br><br>
 <br><br>
 
-<img src="img/sbahn.png" alt="Banner: RRX">
+<img src="../img/sbahn.png" alt="Banner: RRX">
 
 
 <!--  <a href="admin_login.php" class="button_home">Administrieren</a>  -->
@@ -67,7 +67,7 @@ if (isset($_POST["submit"])) {
                 }
                 // Pruefen ob  Erfolg
                 elseif (isset($result) && $result) {
-                    echo "Dein Eintrag <b>" . $status . "</b> wurde vermerkt.";
+                    echo "Die Stationen wurden erfolgreich zurückgesetzt.";
                 }
                 // SQL-Fehler
                 else {
@@ -80,8 +80,8 @@ if (isset($_POST["submit"])) {
             </b>
         </p>
 
-        <a href="index.php" class="button">Stationsübersicht</a>
-        <a href="edit_station.php" class="button button-green">Neue Meldung</a>
+        <a href="../index.php" class="button">Stationsübersicht</a>
+        <a href="stationmaster.php" class="button button-green">Zurück</a>
     </main>
 </div>
 </body>

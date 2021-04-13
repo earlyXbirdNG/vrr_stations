@@ -13,15 +13,16 @@ if (isset($_POST["submit"])) {
     // mysqli_real_escape_string() sorgt dafür, dass eingegebener Text nicht als SQL-Befehl
     // verstanden werden kann (z.B. Anführungszeichen koennten sonst für Probleme sorgen)
     $id = mysqli_real_escape_string($dbconnect, $_POST["id"]);
-    $status = mysqli_real_escape_string($dbconnect, $_POST["status"]);
     $nutzer = mysqli_real_escape_string($dbconnect, htmlentities($_SERVER["HTTP_X_USER"]));
 
 
     // SQL-Abfrage definieren
-    $sql = "UPDATE stations SET status='" . $status . "',nutzer='" . $nutzer . "',datum=default WHERE id='" . $id . "'";
+    $sql = "DELETE FROM stations WHERE id='" . $id . "'";
+    $sql2 = "SELECT station FROM stations WHERE id='" . $id . "' limit 1";
 
     // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);
+    $result_feedback_name = mysqli_query($dbconnect, $sql2);
 
 }
 
@@ -67,7 +68,7 @@ if (isset($_POST["submit"])) {
                 }
                 // Pruefen ob  Erfolg
                 elseif (isset($result) && $result) {
-                    echo "Dein Eintrag <b>" . $status . "</b> wurde vermerkt.";
+                    echo "Station <b>" . $result_feedback_name . "</b> wurde gelöscht.";
                 }
                 // SQL-Fehler
                 else {

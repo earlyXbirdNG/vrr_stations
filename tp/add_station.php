@@ -12,13 +12,13 @@ if (!$dbconnect) {
 if (isset($_POST["submit"])) {
     // mysqli_real_escape_string() sorgt dafür, dass eingegebener Text nicht als SQL-Befehl
     // verstanden werden kann (z.B. Anführungszeichen koennten sonst für Probleme sorgen)
-    $id = mysqli_real_escape_string($dbconnect, $_POST["id"]);
-    $status = mysqli_real_escape_string($dbconnect, $_POST["status"]);
+    $name = mysqli_real_escape_string($dbconnect, $_POST["name"]);
     $nutzer = mysqli_real_escape_string($dbconnect, htmlentities($_SERVER["HTTP_X_USER"]));
+    $nutzer = "debug";
 
 
     // SQL-Abfrage definieren
-    $sql = "UPDATE stations SET status='" . $status . "',nutzer='" . $nutzer . "',datum=default WHERE id='" . $id . "'";
+    $sql = "INSERT INTO stations (name,status,datum,nutzer) VALUES('" . $name . "','Offen',default,'" . $nutzer . "')";
 
     // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);

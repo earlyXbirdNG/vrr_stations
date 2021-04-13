@@ -46,10 +46,10 @@ $num = mysqli_num_rows($result);
         <h1>Admin-Center</h1>
         
         <p>
-            Wähle die Station die du aktualisieren möchtest.
+            Station löschen
 
 
-            <form action="update.php" method="post">
+            <form action="delete_station.php" method="post">
             
             <label for='id'>Station:</label><br>
             <select id="id" name="id" placeholder="Station" required>
@@ -63,21 +63,30 @@ $num = mysqli_num_rows($result);
                 }
             ?>
             </select>                    
-                <br><br>
-
-                <label for="status">Status:</label><br>
-                <select id="status" name="status" placeholder="Neuer Status" required>
-                    <option value="Erhoben">Erhoben</option>
-                    <option value="Reserviert">Reserviert</option>
-                    <option value="Offen">Offen</option>
-                    </select>
-                <br><br>
 
                 <label for="nutzer">Nutzer:</label><br>
                 <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
                 <br><br>
 
                 <input type="submit" id="submit" name="submit" value="Senden" class="button">
+        </form>
+
+
+        </p>
+        <br><br>
+        <p>
+            Station hinzufügen
+
+
+            <form action="add_station.php" method="post">
+
+            <div>
+                    <label>name</label><br> 
+                    <input type="text" placeholder="Stationsname" maxlength="128"/>
+            </div>
+            <br> 
+       
+            <input type="submit" id="submit" name="submit" value="Senden" class="button">
         </form>
 
 

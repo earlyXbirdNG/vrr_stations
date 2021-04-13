@@ -35,6 +35,7 @@ $num = mysqli_num_rows($result);
 
 
 <a href="../index.php" class="button_home">Startseite</a>
+<a href="stationmaster.php" class="button_admin">Admin</a>
 <br><br>
 <br><br>
 
@@ -63,8 +64,8 @@ $num = mysqli_num_rows($result);
                 }
             ?>
             </select>                    
-                <br>
-                <label for="nutzer">Nutzer:</label><br>
+                <br><br>
+                <label for="nutzer">Angemeldeter Nutzer:</label><br>
                 <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
                 <br><br>
 

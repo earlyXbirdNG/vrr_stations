@@ -35,6 +35,7 @@ $num = mysqli_num_rows($result);
 <div class="wrapper">
 
 <a href="index.php" class="button_home">Startseite</a>
+<a href="tp/stationmaster.php" class="button_admin">Admin</a>
 <br><br>
 <br><br>
 

@@ -17,12 +17,14 @@ if (isset($_POST["submit"])) {
 
 
     // SQL-Abfrage definieren
-    $sql = "DELETE FROM stations WHERE id='" . $id . "'";
     $sql2 = "SELECT station FROM stations WHERE id='" . $id . "' limit 1";
+    $sql = "DELETE FROM stations WHERE id='" . $id . "'";
+ 
 
     // Abfrage durchfuehren
     $result = mysqli_query($dbconnect, $sql);
     $result_feedback_name = mysqli_query($dbconnect, $sql2);
+    $feedback_name = mysqli_fetch_assoc($result_feedback_name);
 
 }
 
@@ -68,7 +70,7 @@ if (isset($_POST["submit"])) {
                 }
                 // Pruefen ob  Erfolg
                 elseif (isset($result) && $result) {
-                    echo "Station <b>" . $result_feedback_name . "</b> wurde gelöscht.";
+                    echo "Station <b>" . $feedback_name["station"] . "</b> wurde gelöscht.";
                 }
                 // SQL-Fehler
                 else {

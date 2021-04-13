@@ -47,7 +47,7 @@ $num = mysqli_num_rows($result);
         <h1>Admin-Center</h1>
         
         <p>
-            Station löschen
+            <h2>Station löschen</h2>
 
 
             <form action="delete_station.php" method="post">
@@ -76,7 +76,7 @@ $num = mysqli_num_rows($result);
         </p>
         <br><br>
         <p>
-            Station hinzufügen
+            <h2>Station hinzufügen</h2>
 
 
             <form action="add_station.php" method="post">

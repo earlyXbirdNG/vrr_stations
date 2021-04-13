@@ -91,13 +91,13 @@ $num = mysqli_num_rows($result);
         <hr>
         <br>
         <p>
-            <warnhead2><strong>Gefahrenbereich:</strong></warnheadh2><br>
+            <warnhead2>Gefahrenbereich:</warnhead2><br>
             <warnhead3>Stationen zurücksetzen</warnhead3><br>
             <warntext>Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.</warntext><br>
             <form action="reset_stations.php" method="post">
                 <div>   
                         <input type="checkbox" id="agreement" name="agreement" required>
-                        <label for="agreement">Ich weiß was ich tue.</label>
+                        <label for="agreement"><warntext>Ich weiß was ich tue.</warntext></label>
                 </div>
                 <input type="submit" id="submit" name="submit" value="Zurücksetzen" class="button_red">
             </form>

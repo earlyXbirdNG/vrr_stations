@@ -45,7 +45,7 @@ $num = mysqli_num_rows($result);
 <!-- <a href="admin_login.php" class="button_home">Administrieren</a> -->
     <main>
         
-        <h1>Stationsübersicht</h1>
+        <h1>Stationsübersicht (Testumgebung)</h1>
         
         <?php
         echo "<h3>(Gesamt: " . htmlentities($num) . " Stationen)</h3>";

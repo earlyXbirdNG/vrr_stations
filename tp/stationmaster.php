@@ -9,7 +9,7 @@ if (!$dbconnect) {
 }
 
 // SQL-Abfrage definieren
-$sql = "SELECT * FROM stations";
+$sql = "SELECT * FROM stations ORDER BY station";
 
 // SQL-Abfrage durchfuehren
 $result = mysqli_query($dbconnect, $sql);

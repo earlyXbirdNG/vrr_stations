@@ -47,34 +47,6 @@ $num = mysqli_num_rows($result);
         <h1>Admin-Center</h1>
         
         <p>
-            <h3>Station löschen</h3>
-
-
-            <form action="delete_station.php" method="post">
-            
-            <label for='id'>Station:</label><br>
-            <select id="id" name="id" placeholder="Station" required>
-            <?php
-                if($num > 0){
-
-                    while ($dataset = mysqli_fetch_assoc($result)) {
-                        echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . "</option>";
-                      //  echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . " (" . htmlentities($dataset["status"]) . ")" . "</option>";
-                    }                
-                }
-            ?>
-            </select>                    
-                <br>
-                <br>
-                <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
-        </form>
-
-
-        </p>
-        <br>
-        <hr>
-        <br>
-        <p>
             <h3>Station hinzufügen</h3>
 
 
@@ -105,7 +77,36 @@ $num = mysqli_num_rows($result);
         </p>
         <br>
         <br>
-        <a href="../index.php" class="button">Stationsübersicht</a>
+        <p>
+            <warnhead3>Station löschen</warnhead3><br><br>
+            <warntext>Diese Aktion löscht eine Station permanent und unwiderruflich!</warntext><br>
+                <form action="delete_station.php" method="post">
+
+                    <label for='id'>Station:</label><br>
+                    <select id="id" name="id" placeholder="Station" required>
+                    <?php
+                        if($num > 0){
+
+                            while ($dataset = mysqli_fetch_assoc($result)) {
+                                echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . "</option>";
+                            //  echo "<option value=" . htmlentities($dataset["id"]) . ">" . htmlentities($dataset["station"]) . " (" . htmlentities($dataset["status"]) . ")" . "</option>";
+                            }                
+                        }
+                    ?>
+                    </select>                    
+                        <br>
+                        <br>
+                        <div>   
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement"><warntext>Ich weiß was ich tue.</warntext></label>
+                        </div>
+
+                        <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
+                    </form>
+                <br>
+                <br>
+                <br>
+                <a href="../index.php" class="button">Stationsübersicht</a>
     </main>
 </div>
 </body>

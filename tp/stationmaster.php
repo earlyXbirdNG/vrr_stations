@@ -64,9 +64,7 @@ $num = mysqli_num_rows($result);
                 }
             ?>
             </select>                    
-                <br><br>
-                <label for="nutzer">Angemeldeter Nutzer:</label><br>
-                <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
+                <br>
                 <br>
                 <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
         </form>

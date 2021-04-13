@@ -67,8 +67,6 @@ $num = mysqli_num_rows($result);
                 <br><br>
                 <label for="nutzer">Angemeldeter Nutzer:</label><br>
                 <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
-                <br><br>
-
                 <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
         </form>
 
@@ -82,12 +80,10 @@ $num = mysqli_num_rows($result);
 
 
             <form action="add_station.php" method="post">
-
             <div>
                     <label for="name">Name:</label><br> 
                     <input type="text" name="name" id="name" placeholder="Stationsname" maxlength="128"/>
-            </div>
-            <br>       
+            </div>      
             <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
         </form>
         </p>
@@ -98,7 +94,6 @@ $num = mysqli_num_rows($result);
             <h2><strong>Gefahrenbereich:</strong></h2>
             <h3>Stationen zurücksetzen</h3>
             <p>Diese Aktion setzt alle Stationen unwiderruflich auf den Status "Offen" zurück.</p><br>
-            <br> 
             <form action="reset_stations.php" method="post">
                 <div>   
                         <input type="checkbox" id="agreement" name="agreement" required>

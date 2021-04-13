@@ -22,8 +22,8 @@ if (isset($_POST["submit"])) {
  
 
     // Abfrage durchfuehren
-    $result = mysqli_query($dbconnect, $sql);
     $result_feedback_name = mysqli_query($dbconnect, $sql2);
+    $result = mysqli_query($dbconnect, $sql);
     $feedback_name = mysqli_fetch_assoc($result_feedback_name);
 
 }

@@ -19,20 +19,20 @@ p {
 }
 
 
-.warnhead2 {
+warnhead2 {
     color: red;
     font-size: 1.5em;
     font-weight: bolder;
 }
 
 
-.warnhead3 {
+warnhead3 {
     color: red;
     font-size: 1.17em;
     font-weight: bolder;
 }
 
-.warntext {
+warntext {
     color: red;
     line-height: 1.2em;
     font-size: 1.0em;

@@ -76,7 +76,6 @@ $num = mysqli_num_rows($result);
             </form>
         </p>
         <br>
-        <br>
         <p>
             <warnhead3>Station löschen</warnhead3><br><br>
             <warntext>Diese Aktion löscht eine Station permanent und unwiderruflich!</warntext><br>
@@ -100,7 +99,7 @@ $num = mysqli_num_rows($result);
                             <input type="checkbox" id="agreement" name="agreement" required>
                             <label for="agreement"><warntext>Ich weiß was ich tue.</warntext></label>
                         </div>
-
+                        <br>
                         <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
                     </form>
                 <br>

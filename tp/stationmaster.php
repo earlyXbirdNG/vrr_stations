@@ -92,6 +92,7 @@ $num = mysqli_num_rows($result);
 
         </p>
       <!--  <p><strong>Platzhater fuer einen fetten Text</strong></p> -->
+      <a href="../index.php" class="button">Stationsübersicht</a>
 
     </main>
 </div>

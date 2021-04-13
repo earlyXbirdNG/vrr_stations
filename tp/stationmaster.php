@@ -67,6 +67,7 @@ $num = mysqli_num_rows($result);
                 <br><br>
                 <label for="nutzer">Angemeldeter Nutzer:</label><br>
                 <input disabled required type="text" id="nutzer" name="nutzer" value="<?php echo htmlentities($_SERVER["HTTP_X_USER"]); ?>">
+                <br>
                 <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
         </form>
 
@@ -83,7 +84,8 @@ $num = mysqli_num_rows($result);
             <div>
                     <label for="name">Name:</label><br> 
                     <input type="text" name="name" id="name" placeholder="Stationsname" maxlength="128"/>
-            </div>      
+            </div>
+            <br>      
             <input type="submit" id="submit" name="submit" value="Senden" class="button_red">
         </form>
         </p>
@@ -99,6 +101,7 @@ $num = mysqli_num_rows($result);
                         <input type="checkbox" id="agreement" name="agreement" required>
                         <label for="agreement"><warntext>Ich weiß was ich tue.</warntext></label>
                 </div>
+                <br>
                 <input type="submit" id="submit" name="submit" value="Zurücksetzen" class="button_red">
             </form>
         </p>

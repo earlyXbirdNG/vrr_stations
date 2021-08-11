@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../style.css"/>
-    <title>Stations - internetz.app</title>
+    <title>StationKit - internetz.app</title>
 </head>
 <body>
 <div class="wrapper">

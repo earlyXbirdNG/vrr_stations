@@ -28,7 +28,7 @@ $num_reserved = mysqli_num_rows($result_count_reserved);
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>Stations - internetz.app</title>
+    <title>StationKit - internetz.app</title>
     <style>
 
     </style>

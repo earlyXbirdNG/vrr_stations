@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>Stations - internetz.app</title>
+    <title>StationKit - internetz.app</title>
 </head>
 <body>
 <div class="wrapper">
@@ -48,6 +48,8 @@ if (isset($_POST["submit"])) {
     <main>
     
         <h1>Stationssuche</h1>
+        <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar und daher</warntext><br>
+        <warntext>als Reserviert durch UNWETTER gekennzeichnet. Dies betrifft zzT. 12 Stationen.</warntext><br>
 
         <p>
             <b>

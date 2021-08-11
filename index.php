@@ -57,6 +57,7 @@ $num = mysqli_num_rows($result);
         </p>
         <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar und daher</warntext><br>
         <warntext>als Reserviert durch UNWETTER gekennzeichnet. Dies betrifft zzT. 12 Stationen.</warntext><br>
+        <br>
 
         <a href="edit_station.php" class="button_small">Neue Meldung</a>
         <a href="offen.php" class="button_small">Nur offene zeigen</a>

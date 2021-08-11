@@ -50,6 +50,7 @@ if (isset($_POST["submit"])) {
         <h1>Stationssuche</h1>
         <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar und daher</warntext><br>
         <warntext>als Reserviert durch UNWETTER gekennzeichnet. Dies betrifft zzT. 12 Stationen.</warntext><br>
+        <br>
 
         <p>
             <b>

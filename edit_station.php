@@ -49,6 +49,7 @@ $num = mysqli_num_rows($result);
         <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar.</warntext><br>
         <warntext>Informiere Dich bitte auf der Startseite. Sollte eine Station wieder befahrbar</warntext><br>
         <warntext>sein, kannst Du diese nach Rücksprache mit dem Büro wie gewohnt reservieren /erheben.</warntext><br>
+        <br>
         <p>
             Wähle die Station die du aktualisieren möchtest.
         </p>

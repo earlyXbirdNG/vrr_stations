@@ -46,6 +46,9 @@ $num = mysqli_num_rows($result);
     <main>
        <!-- <img src="img/banner_grillparty.jpg" alt="Banner: Grillparty"> -->
         <h1>Station aktualisieren</h1>
+        <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar.</warntext><br>
+        <warntext>Informiere Dich bitte auf der Startseite. Sollte eine Station wieder befahrbar</warntext><br>
+        <warntext>sein, kannst Du diese nach Rücksprache mit dem Büro wie gewohnt reservieren /erheben.</warntext><br>
         <p>
             Wähle die Station die du aktualisieren möchtest.
         </p>

@@ -48,6 +48,8 @@ $num_reserved = mysqli_num_rows($result_count_reserved);
     <main>
     
         <h1>Stationsübersicht</h1>
+        <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar und daher</warntext><br>
+        <warntext>als Reserviert durch UNWETTER gekennzeichnet. Dies betrifft zzT. 12 Stationen.</warntext><br>
 
         <?php
         echo "<h3>(Offen: " . htmlentities($num) . " Stationen, beinhaltet " . htmlentities($num_reserved) . " reservierte Stationen) </h3>";

@@ -56,7 +56,9 @@ $num = mysqli_num_rows($result);
             Folgend siehst du eine Auflistung aller Stationen im VRR und deren Erhebungsstatus.
         </p>
         <warntext>Unwetterschäden im Rhein/Ruhr-Gebiet. Einige Stationen sind nicht befahrbar und daher</warntext><br>
-        <warntext>als Reserviert durch UNWETTER gekennzeichnet. Dies betrifft zzT. 12 Stationen.</warntext><br>
+        <warntext>als Erhoben durch UNWETTER gekennzeichnet. Diese Stationen sind jedoch nicht erhoben, sondern</warntext><br>
+        <warntext>nur so hinterlegt, damit sie aus den Statistiken rausgerechnet werden. Zum Reservieren oder erheben</warntext><br>
+        <warntext>einfach überschreiben.</warntext><br>
         <br>
 
         <a href="edit_station.php" class="button_small">Neue Meldung</a>
